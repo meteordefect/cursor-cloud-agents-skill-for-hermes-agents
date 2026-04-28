@@ -1,0 +1,12 @@
+name: cursor-cloud-agents
+version: 0.1.0
+description: Launch and manage Cursor Cloud Agents from Hermes.
+runtime:
+  type: python
+  entrypoint: handler.py
+interface:
+  input_schema: schema.json
+secrets:
+  - CURSOR_API_KEY
+permissions:
+  - https://api.cursor.com

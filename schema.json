@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cursor Cloud Agents Hermes Skill",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["action"],
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": [
+        "me",
+        "models",
+        "repositories",
+        "list_agents",
+        "launch_agent",
+        "get_agent",
+        "followup",
+        "stop_agent",
+        "conversation",
+        "list_artifacts",
+        "download_artifact"
+      ]
+    },
+    "agent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "cursor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pr_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri"
+    },
+    "ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "branch_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "auto_create_pr": {
+      "type": "boolean"
+    },
+    "open_as_cursor_github_app": {
+      "type": "boolean"
+    },
+    "skip_reviewer_request": {
+      "type": "boolean"
+    },
+    "auto_branch": {
+      "type": "boolean"
+    },
+    "artifact_path": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
