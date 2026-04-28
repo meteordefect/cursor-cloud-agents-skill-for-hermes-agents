@@ -45,3 +45,7 @@ The key must have access to Cursor Cloud Agents and the target GitHub repositori
 ## Notes
 
 This first version targets Cursor Cloud Agents only. Cursor's Cloud Agents API does not expose the local SDK `run.stream()` event stream, so Hermes should poll `get_agent` or use Cursor webhooks outside this skill if it needs live status updates.
+
+---
+
+Created by Keith Vaughan @ Fair Developers [ Bullding Cutting Edge AI Systems In The Cloud ]
