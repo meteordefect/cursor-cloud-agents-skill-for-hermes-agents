@@ -48,4 +48,4 @@ This first version targets Cursor Cloud Agents only. Cursor's Cloud Agents API d
 
 ---
 
-Created by Keith Vaughan @ Fair Developers [ Bullding Cutting Edge AI Systems In The Cloud ]
+Created by Keith Vaughan @ Fair Developers [ Bullding Cutting Edge AI Systems In The Cloud ] Fairdevs.com
